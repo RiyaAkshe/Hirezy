@@ -58,10 +58,12 @@ Install all necessary project dependencies:
 Bash
 
 npm install
+
 Start Development Server:
 
 Launch the React application in development mode. The standard command for React development servers is npm start, which often maps to npm run start or npm run dev depending on the project's package.json scripts.
 Bash
 
 npm start
+
 This will typically compile the application and open it in a web browser at http://localhost:3000.
