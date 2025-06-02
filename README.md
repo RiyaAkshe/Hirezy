@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Hirezy Recruitment Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Project Overview : 
+The Hirezy project is a comprehensive recruitment management dashboard designed to streamline and centralize various aspects of the hiring process.This platform provides a centralized interface for HR professionals and hiring managers to efficiently track applicants, manage job postings, monitor key metrics, and perform essential recruitment tasks.
 
-## Available Scripts
+2. Technical Stack : 
+The application is built upon the following core technologies:
 
-In the project directory, you can run:
+React.js: The primary JavaScript library used for building dynamic user interfaces and managing component-based architecture.
 
-### `npm start`
+3. Application Architecture & Key Modules : 
+The Hirezy web application is structured as an SPA with distinct, modular React components representing different sections of the dashboard. This modularity facilitates maintainability, scalability, and an organized content presentation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The main modules and functionalities include:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dashboard Overview (OverviewCards.js, BarGraph.js): Provides a visual summary of recruitment progress, including application statistics, interview stages, and departmental application distribution through interactive charts and cards.
+Applicant Tracking System (ApplicantsTable.js, Modal.js): Features a detailed table for managing applicant data, including name, position, application date, and status. A modal component (Modal.js) allows for quick viewing of resume details and other applicant information.
+Quick Actions (QuickActions.js): Offers immediate access to frequently used recruitment tasks such as adding new applicants, creating new job postings, scheduling interviews, and sending offer letters.
+Recent Activity Feed (Activity.js): Displays a chronological log of recent actions and events within the system, providing transparency and real-time updates on team activities.
+Scheduling (Schedule.js): Manages interview schedules and other recruitment-related events with clear timeframes and event titles.
+Resources (Resources.js): Provides insights into applicant resources or departmental allocation related to the hiring process.
+Navigation and User Interface (Sidebar.js, Header.js): A persistent sidebar offers intuitive navigation to different sections (Dashboard, Jobs, Candidates, Calendar, Analytics, Settings), while a header component provides search functionality, notifications, and user profile access.
+The Hirezy dashboard aims to enhance the efficiency and organization of recruitment workflows, providing a robust tool for modern talent acquisition.
 
-### `npm test`
+4. Setup and Local Development
+To set up and run the Hirezy web application on a local machine, ensure Node.js and npm (Node Package Manager) are installed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Prerequisites:
 
-### `npm run build`
+Install Node.js. npm is included with Node.js.
+Verify installation by running:
+Bash
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+node -v
+npm -v
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the Repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open a terminal or command prompt.
+Navigate to the directory where the project should be stored.
+Clone the repository using its URL (replace [YOUR_REPOSITORY_URL] with the actual URL):
+Bash
 
-### `npm run eject`
+git clone [YOUR_REPOSITORY_URL]
+Navigate to Project Directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Change into the cloned project folder:
+Bash
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd [your-project-folder-name]
+(e.g., cd hirezy-dashboard)
+Install Dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install all necessary project dependencies:
+Bash
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
+Start Development Server:
 
-## Learn More
+Launch the React application in development mode. The standard command for React development servers is npm start, which often maps to npm run start or npm run dev depending on the project's package.json scripts.
+Bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+This will typically compile the application and open it in a web browser at http://localhost:3000.
